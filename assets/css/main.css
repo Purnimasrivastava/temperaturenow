@@ -1,0 +1,151 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+main{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.topSection{
+  display:flex;
+  height: 100vh;
+  background-image: url('../img/background/vector.png');  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0 5%;
+}
+.search-section{
+  flex: 1;
+  position: relative;
+}
+.sidepic-section{
+  flex: 1;
+  position: relative;
+}
+.sidepic{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 1s ease-in-out;
+  animation: move 2s ease infinite alternate;
+}
+@keyframes move{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+      transform: translateY(-20px);
+
+  }
+}
+.search-section form{
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.search-input{
+  width: 400px;
+  height: 50px;
+  border: 1px solid #d4d4d40f;
+  background: #d8d5fb7d;
+  mix-blend-mode: normal;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.search-btn{
+  margin: 10px 0;
+  background: linear-gradient(318.06deg, #3F3D56 4.87%, #6C63FF 47.68%, #6C63FF 105.37%);
+  border-radius: 6px;
+  color: white;
+  padding: 11px 40px;
+  font-size: 18px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.floating-div{
+  position: absolute;
+  top: 29%;
+  right: 45%;
+}
+#floating-temp{
+  font-weight: 900;
+  font-size: 45px;
+}
+#floating-con{
+  font-size: 29px;
+}
+#floating-city{
+  font-size: 34px;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .search-input{
+    width: 300px;
+  }
+  .sidepic{
+    height: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sidepic{
+    height: 60%;
+  }
+  .floating-div{
+    right: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topSection{
+    background-size: cover;
+    flex-direction: column;
+  }
+  .search-section form{
+    position: absolute;
+    bottom: 0;
+    
+  }
+  .sidepic{
+      height: 100%;  
+  }
+  .floating-div{
+    top:44%;
+    right: 37%;
+  }
+  #floating-temp{
+    font-weight: 900;
+    font-size: 38px;
+  }
+  #floating-con{
+    font-size: 24px;
+  }
+  #floating-city{
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sidepic{
+    height: 85%;
+  }
+  .search-input{
+    width: 270px;
+  }
+  #floating-temp{
+    font-weight: 900;
+    font-size: 36px;
+  }
+  #floating-con{
+    font-size: 19px;
+  }
+  #floating-city{
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

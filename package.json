@@ -4,11 +4,16 @@
   "description": "Temperature and weather base app ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js -e js,hbs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.2"
   }
 }
