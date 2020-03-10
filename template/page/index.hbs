@@ -6,31 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Temperature Now, 1 app to Find Current Temperature for my location</title>
     <meta name="description" content="Temperature Now is a No. 1 app to find Current Temperature and weather for all over the world. Check-out Current Temperature easily">
-    <link rel="canonical" href="" />
+    <link rel="canonical" href="https://temperaturenow.herokuapp.com/" />
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Temperature Now, 1 app to Find Current Temperature for my location" />
     <meta property="og:description" content="Temperature Now is a No. 1 app to find Current Temperature and weather for all over the world. Check-out Current Temperature easily" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://temperaturenow.herokuapp.com/" />
     <meta property="og:site_name" content="Temperature Now" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <a href=""><img src="./img/logo.png" alt="Temperature Now"></a>
-        </div>
-        <ul class="nav-container">
-            <li><a href="javascript:setfloats('Delhi')" class="nav-link">Delhi</a></li>
-            <li><a href="javascript:setfloats('Lucknow')" class="nav-link">Lucknow</a></li>
-            <li><a href="javascript:setfloats('Kanpur')" class="nav-link">Kanpur</a></li>
-            <li><a href="javascript:setfloats('Pune')" class="nav-link">Pune</a></li>
-            <li><a href="javascript:setfloats('Mumbai')" class="nav-link">Mumbai</a></li>
-        </ul>
-    </header>
+    {{>header}}
     <main>
         <div class="topSection">
             <div class="search-section">

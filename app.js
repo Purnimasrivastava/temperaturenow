@@ -18,9 +18,7 @@ hbs.registerPartials(partial);
 app.use(express.static(static));
 //routing
 app.get('/',(req,res)=>{
-    res.render('index',{
-        title:'index'
-    });
+    res.render('index');
 })
 app.get('/weather',(req,res)=>{
     const address = req.query.address || 'Delhi';
