@@ -65,7 +65,7 @@ function setfloats(address='delhi'){
                 
             }else{
                 var temperature = (5/9) * (data.temperature - 32);
-                message2.textContent = address;
+                message2.textContent = data.place;
                 message.textContent = temperature.toFixed(1)+"'C ";
                 message3.textContent = 'Now in ';
             }
