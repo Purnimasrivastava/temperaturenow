@@ -46,6 +46,20 @@ app.get('/weather',(req,res)=>{
     
    
 })
+app.get('/forcast',(req,res)=>{
+    forcast(req.query.lat,req.query.lng,(err,response)=>{
+        if(err != null){
+            console.log('error',err);
+            res.send({
+                error:'true'
+            });
+        }
+        const result = response;
+        res.send(result);
+    });
+    
+   
+})
 
 
 

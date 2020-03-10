@@ -16,6 +16,7 @@
     <meta property="og:site_name" content="Temperature Now" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -23,11 +24,11 @@
             <a href=""><img src="./img/logo.png" alt="Temperature Now"></a>
         </div>
         <ul class="nav-container">
-            <li><a href="" class="nav-link">Delhi</a></li>
-            <li><a href="" class="nav-link">Lucknow</a></li>
-            <li><a href="" class="nav-link">Kanpur</a></li>
-            <li><a href="" class="nav-link">Pune</a></li>
-            <li><a href="" class="nav-link">Mumbai</a></li>
+            <li><a href="javascript:setfloats('Delhi')" class="nav-link">Delhi</a></li>
+            <li><a href="javascript:setfloats('Lucknow')" class="nav-link">Lucknow</a></li>
+            <li><a href="javascript:setfloats('Kanpur')" class="nav-link">Kanpur</a></li>
+            <li><a href="javascript:setfloats('Pune')" class="nav-link">Pune</a></li>
+            <li><a href="javascript:setfloats('Mumbai')" class="nav-link">Mumbai</a></li>
         </ul>
     </header>
     <main>
@@ -43,9 +44,9 @@
             </div>
             <div class="floating-div">
                 <p class="floating-container">
-                    <span id="floating-temp">17'C </span>
-                    <span id="floating-con"> Now in </span>
-                    <span id="floating-city"> Delhi</span>
+                    <span id="floating-temp"></span>
+                    <span id="floating-con"></span>
+                    <span id="floating-city"></span>
                 </p>
             </div>
         </div>
