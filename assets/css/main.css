@@ -116,7 +116,8 @@ main{
   }
   .floating-div{
     top:44%;
-    right: 37%;
+    right: 36%;
+    padding: 0 5%;
   }
   #floating-temp{
     font-weight: 900;
@@ -126,7 +127,7 @@ main{
     font-size: 24px;
   }
   #floating-city{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
   }
 }
@@ -137,6 +138,10 @@ main{
   .search-input{
     width: 270px;
   }
+  .floating-div{
+    padding:0 5%;
+    right: 15%;
+  }
   #floating-temp{
     font-weight: 900;
     font-size: 36px;
@@ -145,7 +150,7 @@ main{
     font-size: 19px;
   }
   #floating-city{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
   }
 }
